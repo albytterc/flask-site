@@ -1,6 +1,6 @@
 import unittest, sys, os
 
-sys.path.append('/home/codio/workspace')
+sys.path.append('/home/codio/workspace/flask-site')
 from main import app, db
 
 class UsersTests(unittest.TestCase):
