@@ -14,13 +14,13 @@
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
       <div class="container">
-        <a class="navbar-brand mr-4" href="/">Albert's Site</a>
+        <a id="title" class="navbar-brand mr-4" href="/">Albert's Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/home">Home</a>
             <a class="nav-item nav-link" href="/about">About</a>
             <a class="nav-item nav-link" href="/register">Register</a>
           </div>
@@ -31,16 +31,17 @@
   <main role="main" class="container">
     {% with messages = get_flashed_messages() %}
       {% if messages %}
-        <ul class="flashes">
+        <ul class="flashes list-group">
         {% for message in messages %}
-          <li>{{ message }}</li>
+          <li class="list-group-item list-group-item-success">{{ message }}</li>
         {% endfor %}
         </ul>
       {% endif %}
     {% endwith %}
     <div class="row">
       <div class="col-md-8">
-        <h1>This shows up on every page</h1> {% block content %}{% endblock %}
+        <!-- <h1>This shows up on every page</h1>  -->
+        {% block content %}{% endblock %}
       </div>
     </div>
   </main>
