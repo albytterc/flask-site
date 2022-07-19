@@ -1,7 +1,7 @@
 import unittest, sys, os
 
 sys.path.append('../flask-site')
-from main import app, db
+from flasksite import app, db
 
 class UsersTests(unittest.TestCase):
 
