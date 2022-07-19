@@ -1,8 +1,10 @@
 import pytest
 
-from flasksite import app as flask_app
+from flasksite import app
 
 
 @pytest.fixture
-def app()
+def app():
+    return app
+
 
