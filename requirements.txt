@@ -11,5 +11,6 @@ flask_behind_proxy==0.1.1
 flask-Bcrypt==1.0.1
 flask_sqlalchemy
 pytest
+pytest-flask
 pycodestyle
 
