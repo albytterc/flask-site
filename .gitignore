@@ -1,2 +1,4 @@
 /__pycache__
 .codio
+*.egg-info
+*/__pycache__
