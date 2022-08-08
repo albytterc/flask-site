@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='flasksite',
-    packages=['flasksite'],
+    name='src',
+    packages=['src'],
     include_package_data=True,
     install_requires=[
         'flask',

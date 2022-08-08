@@ -1,10 +1,10 @@
 from flask import render_template, url_for, flash, redirect
 # from flask_bcrypt import Bcrypt
-from flasksite.forms import RegistrationForm, LoginForm
+from src.forms import RegistrationForm, LoginForm
 # from flask_behind_proxy import FlaskBehindProxy
 # from flask_sqlalchemy import SQLAlchemy
-from flasksite.model import User
-from flasksite import app, bcrypt, db, proxied
+from src.model import User
+from src import app, bcrypt, db, proxied
 
 
 @app.route("/home")

@@ -20,5 +20,5 @@ proxied = FlaskBehindProxy(app)
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
 
-from flasksite import routes
+from src import routes
 
